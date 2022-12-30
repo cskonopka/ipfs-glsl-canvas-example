@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,user-scalable=yes">
+    <title>cskonopka</title>
+
+    <!-- ./css/glsl-canvas.css -->
+    <!-- insert IPFS url below without the "?filename=" extension -->
+    <link type="text/css" href="https://ipfs.io/ipfs/Qmc3qTxozbPWQDaNTc2ouyFJeuVgojWG9Q8hUAoBPrjTzr" rel="stylesheet" />
+
+    <!-- ./js/glsl-canvas.min.js -->
+    <!-- insert IPFS url below without the "?filename=" extension -->
+    <script type="text/javascript" src="https://ipfs.io/ipfs/QmWVtMVKhCakRqckKRz66n9aPYGQq317UawDMZdaznhFLE"></script>
+</head>
+
+<!-- CSS -->
+<style>
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        margin: 0;
+        background: #111;
+        overflow: hidden;
+    }
+    
+    .glsl-canvas {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <canvas class="glsl-canvas" width="100%" height="100%" data-fragment-url="https://ipfs.io/ipfs/QmVjQuQjPs1THktrg5jhScuZ9BCXTytFa7G42PLaCEbAmm"></canvas>
+</body>
+<script>
+    var options = {
+        backgroundColor: 'rgba(0.0, 0.0, 0.0, 0.0)',
+        alpha: true,
+        antialias: false,
+        premultipliedAlpha: false,
+        preserveDrawingBuffer: false,
+        extensions: [],
+        doubleSided: false,
+    };
+    var canvas = document.querySelector('.glsl-canvas');
+    var glsl = new glsl.Canvas(canvas, options);
+    glsl.setUniforms({});
+    glsl.on('render', function() {});
+</script>
+
+</html>
